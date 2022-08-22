@@ -72,7 +72,7 @@ public class UserBooksController {
         booksByUserRepository.save(booksByUser);
 
 
-        return new ModelAndView("redirect:/book/" + bookId);
+        return new ModelAndView("redirect:/books/" + bookId);
 
     }
 }

@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <a th:href="@{'/book/' + ${book.bookId}}"  class="card-title" th:text="${book.bookName}">Name</a>
+                <a th:href="@{'/books/' + ${book.bookId}}"  class="card-title" th:text="${book.bookName}">Name</a>
                 <p class="card-text" th:text="${book.authorNames}">Author name</p>
                 <div th:switch="${book.readingStatus}">
                   <p th:case="'0-reading'" class="card-text">Currently Reading</p>

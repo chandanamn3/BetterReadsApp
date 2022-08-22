@@ -25,7 +25,7 @@ public class BookController {
     @Autowired
     UserBooksRepository userBooksRepository;
 
-    @GetMapping("/book/{bookId}")
+    @GetMapping("/books/{bookId}")
     public String getBook(@PathVariable String bookId, Model model, @AuthenticationPrincipal OAuth2User principal)
     {
         Optional<Book> optionalbook = bookRepository.findById(bookId);  
